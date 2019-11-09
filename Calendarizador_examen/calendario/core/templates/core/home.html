@@ -1,0 +1,920 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Generador de calendario{% endblock %}
+
+{% block content %}
+
+<!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <h4 class="page-title float-left">Dashboard</h4>
+
+                                <ol class="breadcrumb float-right">
+                                    <li class="breadcrumb-item"><a href="#">Adminox</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Dashboard 1</li>
+                                </ol>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+
+                    <!-- <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fecha parcial 1:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fecha ordinario:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Grado:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+
+                    <!-- inicio row 2 -->
+                    <!-- <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fecha parcial 2:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fecha extraordinario 1:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Grupo:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- fin del row -->
+
+                    <!-- inicio row 3 -->
+                    <!-- <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fecha parcial 3:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fecha extraordinario 2:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Carrera:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- fin del row -->
+
+ <!---tabla inicio-->
+
+ <table class="egt">
+
+    <tr>
+
+      <th scope="row">Hora</th>
+
+      <th colspan="2"> Lunes</th>
+
+      <th colspan="2"> Martes</th>
+
+      <th colspan="2"> Miercoles</th>
+
+      <th colspan="2">Jueves</th>
+
+      <th colspan="2"> Viernes</th>
+
+
+    </tr>
+
+    <tr>
+
+      <th>4:00 - 4:50</th>
+
+      <td>
+        <select>
+        <option value="0">Matemáticas</option>
+        <option value="1">Programación</option>
+        <option value="2">Ingeniería económica</option>
+        <option value="3">Administración del tiempo</option>
+        <option value="4">Inglés</option>
+        <option value="5">Electrónica</option>
+        <option value="6">Modelado de procescos</option>
+      </select>
+      </td>
+
+      <td>
+        <select>
+        <option value="0">C-102</option>
+        <option value="1">C-104</option>
+        <option value="2">C-106</option>
+        <option value="3">C-108</option>
+        <option value="4">Lab 1</option>
+        <option value="5">Lab 2</option>
+        <option value="6">Lab 3</option>
+        <option value="7">Lab 4</option>
+        <option value="8">Lab 5</option>
+        <option value="9">Lab 6</option>
+        <option value="10">Lab 7</option>
+        <option value="11">Lab 8</option>
+        <option value="12">Lab 9</option>
+        </select>
+      </td>
+
+      <td>
+        <select>
+        <option value="0">Matemáticas</option>
+        <option value="1">Programación</option>
+        <option value="2">Ingeniería económica</option>
+        <option value="3">Administración del tiempo</option>
+        <option value="4">Inglés</option>
+        <option value="5">Electrónica</option>
+        <option value="6">Modelado de procescos</option>
+         </select>
+     </td>
+
+     <td>
+        <select>
+        <option value="0">C-102</option>
+        <option value="1">C-104</option>
+        <option value="2">C-106</option>
+        <option value="3">C-108</option>
+        <option value="4">Lab 1</option>
+        <option value="5">Lab 2</option>
+        <option value="6">Lab 3</option>
+        <option value="7">Lab 4</option>
+        <option value="8">Lab 5</option>
+        <option value="9">Lab 6</option>
+        <option value="10">Lab 7</option>
+        <option value="11">Lab 8</option>
+        <option value="12">Lab 9</option>
+        </select>
+    </td>
+
+    <td>
+        <select>
+        <option value="0">Matemáticas</option>
+        <option value="1">Programación</option>
+        <option value="2">Ingeniería económica</option>
+        <option value="3">Administración del tiempo</option>
+        <option value="4">Inglés</option>
+        <option value="5">Electrónica</option>
+        <option value="6">Modelado de procescos</option>
+        </select>
+    </td>
+
+    <td>
+        <select>
+        <option value="0">C-102</option>
+        <option value="1">C-104</option>
+        <option value="2">C-106</option>
+        <option value="3">C-108</option>
+        <option value="4">Lab 1</option>
+        <option value="5">Lab 2</option>
+        <option value="6">Lab 3</option>
+        <option value="7">Lab 4</option>
+        <option value="8">Lab 5</option>
+        <option value="9">Lab 6</option>
+        <option value="10">Lab 7</option>
+        <option value="11">Lab 8</option>
+        <option value="12">Lab 9</option>
+        </select>
+    </td>
+
+    <td>
+        <select>
+        <option value="0">Matemáticas</option>
+        <option value="1">Programación</option>
+        <option value="2">Ingeniería económica</option>
+        <option value="3">Administración del tiempo</option>
+        <option value="4">Inglés</option>
+        <option value="5">Electrónica</option>
+        <option value="6">Modelado de procescos</option>
+        </select>
+        </td>
+
+    <td>
+        <select>
+        <option value="0">C-102</option>
+        <option value="1">C-104</option>
+        <option value="2">C-106</option>
+        <option value="3">C-108</option>
+        <option value="4">Lab 1</option>
+        <option value="5">Lab 2</option>
+        <option value="6">Lab 3</option>
+        <option value="7">Lab 4</option>
+        <option value="8">Lab 5</option>
+        <option value="9">Lab 6</option>
+        <option value="10">Lab 7</option>
+        <option value="11">Lab 8</option>
+        <option value="12">Lab 9</option>
+        </select>
+    </td>
+
+      <td>
+        <select>
+        <option value="0">Matemáticas</option>
+        <option value="1">Programación</option>
+        <option value="2">Ingeniería económica</option>
+        <option value="3">Administración del tiempo</option>
+        <option value="4">Inglés</option>
+        <option value="5">Electrónica</option>
+        <option value="6">Modelado de procescos</option>
+        </select>
+        </td>
+
+    <td>
+        <select>
+        <option value="0">C-102</option>
+        <option value="1">C-104</option>
+        <option value="2">C-106</option>
+        <option value="3">C-108</option>
+        <option value="4">Lab 1</option>
+        <option value="5">Lab 2</option>
+        <option value="6">Lab 3</option>
+        <option value="7">Lab 4</option>
+        <option value="8">Lab 5</option>
+        <option value="9">Lab 6</option>
+        <option value="10">Lab 7</option>
+        <option value="11">Lab 8</option>
+        <option value="12">Lab 9</option>
+        </select>
+    </td>
+
+    </tr>
+
+    <tr>
+
+      <th>4:50 - 5:40</th>
+
+      <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+          </select>
+          </td>
+
+          <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+          </td>
+
+          <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+             </select>
+         </td>
+
+         <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+            </select>
+            </td>
+
+        <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+        </td>
+
+          <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+            </select>
+            </td>
+
+        <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+        </td>
+
+    </tr>
+
+    <tr>
+
+      <th>5:40 - 6:30</th>
+
+      <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+          </select>
+          </td>
+
+          <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+          </td>
+
+          <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+             </select>
+         </td>
+
+         <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+            </select>
+            </td>
+
+        <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+        </td>
+
+          <td>
+            <select>
+            <option value="0">Matemáticas</option>
+            <option value="1">Programación</option>
+            <option value="2">Ingeniería económica</option>
+            <option value="3">Administración del tiempo</option>
+            <option value="4">Inglés</option>
+            <option value="5">Electrónica</option>
+            <option value="6">Modelado de procescos</option>
+            </select>
+            </td>
+
+        <td>
+            <select>
+            <option value="0">C-102</option>
+            <option value="1">C-104</option>
+            <option value="2">C-106</option>
+            <option value="3">C-108</option>
+            <option value="4">Lab 1</option>
+            <option value="5">Lab 2</option>
+            <option value="6">Lab 3</option>
+            <option value="7">Lab 4</option>
+            <option value="8">Lab 5</option>
+            <option value="9">Lab 6</option>
+            <option value="10">Lab 7</option>
+            <option value="11">Lab 8</option>
+            <option value="12">Lab 9</option>
+            </select>
+        </td>
+
+    </tr>
+
+    <tr>
+
+        <th>6:30 - 7:20</th>
+
+        <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+              </select>
+              </td>
+
+              <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+              </td>
+
+              <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+                 </select>
+             </td>
+
+             <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+            </td>
+
+            <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+                </select>
+            </td>
+
+            <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+            </td>
+
+            <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+                </select>
+                </td>
+
+            <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+            </td>
+
+              <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+                </select>
+                </td>
+
+            <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+            </td>
+
+      </tr>
+
+      <tr>
+
+        <th>7:20 - 8:10</th>
+
+        <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+              </select>
+              </td>
+
+              <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+              </td>
+
+              <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+                 </select>
+             </td>
+
+             <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+            </td>
+
+            <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+                </select>
+            </td>
+
+            <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+            </td>
+
+            <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+                </select>
+                </td>
+
+            <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+            </td>
+
+              <td>
+                <select>
+                <option value="0">Matemáticas</option>
+                <option value="1">Programación</option>
+                <option value="2">Ingeniería económica</option>
+                <option value="3">Administración del tiempo</option>
+                <option value="4">Inglés</option>
+                <option value="5">Electrónica</option>
+                <option value="6">Modelado de procescos</option>
+                </select>
+                </td>
+
+            <td>
+                <select>
+                <option value="0">C-102</option>
+                <option value="1">C-104</option>
+                <option value="2">C-106</option>
+                <option value="3">C-108</option>
+                <option value="4">Lab 1</option>
+                <option value="5">Lab 2</option>
+                <option value="6">Lab 3</option>
+                <option value="7">Lab 4</option>
+                <option value="8">Lab 5</option>
+                <option value="9">Lab 6</option>
+                <option value="10">Lab 7</option>
+                <option value="11">Lab 8</option>
+                <option value="12">Lab 9</option>
+                </select>
+            </td>
+
+      </tr>
+
+
+
+  </table>
+
+<!--tabla fin-->
+
+                    <br>
+                    <button type="button" class="btn btn-success btn-rounded w-md waves-effect waves-light">Guardar</button>
+
+
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+
+
+
+
+            {% endblock %}
