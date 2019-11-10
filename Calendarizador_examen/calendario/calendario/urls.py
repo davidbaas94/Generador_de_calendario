@@ -18,7 +18,9 @@ from django.urls import path
 from core import views
 
 urlpatterns = [
-    path('',views.home, name="home"),
+    path('grupo/',views.grupos, name="grupos"),
+    path('asignatura/',views.asignatura, name="asignatura"),
+    path('aula/',views.aula, name="aula"),
     path('calendario/',views.calendar, name="calendar"),
     path('admin/', admin.site.urls),
 ]

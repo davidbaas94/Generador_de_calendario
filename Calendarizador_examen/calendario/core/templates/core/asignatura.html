@@ -1,0 +1,81 @@
+{% extends 'core/base.html'%}
+
+{% block title %} Asignaturas {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Asignaturas</h1>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+               <div class="col-md-12">
+                <div class="col-md-4">
+
+                    <label for="exampleFormControlSelect1">Cuatrimestre</label>
+                    <select class="selectpicker" data-live-search="true"  data-style="btn-custom">
+
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                    </select>
+
+                </div>
+               </div>
+            </div>
+            <!-- end row -->
+
+
+            <div class="row"> 
+                <div class=col-md-12>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Carrera</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+                        </div>
+                    </div> 
+                </div>        
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <button type="button"
+                            class="btn btn-success btn-rounded w-md waves-effect waves-light">Guardar
+                        </button>
+                    </div>
+                </div>
+            </div>        
+
+
+
+
+        </div> <!-- container -->
+    </div> <!-- content -->
+ {% comment %} content-page {% endcomment %}
+</div>
+
+        {% endblock %}
